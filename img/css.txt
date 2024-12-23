@@ -1,0 +1,12 @@
+font-family: 'Open Sans', sans-serif;
+background-color: black;
+
+font-size: 10px;
+    font-weight: 300;
+
+buttun color
+
+background-color: #00d158;
+
+font color
+color: #e7e0d3;
