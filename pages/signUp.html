@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../style/logIn.css" />
+</head>
+<body>
+    <div class="form-wrapper">
+        <h1>Create Your Account</h1>
+
+        <div class="form-container">
+            <form onsubmit="validateSignup(event)">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required />
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required />
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required />
+
+                <label for="place">Select City</label>
+                <select id="place" name="place" required>
+                    <option value="">-- Select a City --</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Lucknow">Lucknow</option>
+                </select>
+
+                <label for="signupEmail">Email</label>
+                <input type="email" id="signupEmail" name="signupEmail" required />
+
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" name="signupPassword" required />
+
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required />
+
+                <input type="submit" value="Sign Up" />
+            </form>
+        </div>
+    </div>
+
+    <script src="js/logIn.js"></script>
+</body>
+</html>

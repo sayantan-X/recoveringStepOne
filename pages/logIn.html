@@ -1,64 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log In</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="../style/logIn.css" />
-  </head>
-  <body>
-    <h1 id="header">HI i am Log In!!!!</h1>
-    <div class="logIn" id="info">
-      <form action="#">
-        <div>
+</head>
+<body>
+    <div class="form-wrapper">
+        <h1>Welcome! Please Log In</h1>
 
-          <span>
-            <label for="userName">User Name</label>
-            <input type="email" name="userName" />
-            
-          </span>
-          <span>
-            <label for="userPswd">Password</label>
-            <input type="password" name="userPswd" id="userPswd" />
-            
-          </span>
-          <span>
-            <input type="button" value="Log Me In" />
-            
-          </span>
+        <!-- Login Form -->
+        <div id="loginForm" class="form-container">
+            <h2>Log In</h2>
+            <form onsubmit="validateLogin(event)">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" name="loginEmail" required />
+
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="loginPassword" required />
+
+                <input type="submit" value="Log In" />
+            </form>
+
+            <p>Don't have an account? <a href="signup.html" target="_blank">Sign Up</a></p>
         </div>
-      </form>
-      <p>Or you can sign up now</p>
-      <form action="#" name="logInForm" onsubmit="validateFormData (event)">
-        <div id="userFirstName">
-          <label for="firstName">First Name</label>
-          <input type="text" name="firstName" id="firstName" />
-          <span class="errorMsg"></span>
-        </div>
-        <label for="middleName">Middle Name</label>
-        <input type="text" name="middleName" />
-        <label for="lastName">Last Name</label>
-        <input type="text" name="lastName" /> <br />
-        <label for="userEmail">Email</label>
-        <input type="email" name="userEmail" id="" /> <br />
-        <!-- <label for="userGender">Gender</label> -->
-        <!-- <input type="checkbox" name="userGender" id="">
-        <label for="userGender">Gender</label> -->
-        <input type="radio" name="userGenderMale" id="" value="MALE" />
-        <label for="userGenderMale">Male</label>
-        <input type="radio" name="userGenderFeMale" id="" value="FEMALE" />
-        <label for="userGenderFeMale">Fe Male</label> <br />
-        <label for="userPsw">Password</label>
-        <input type="password" name="userPsw" id="userPsw" />
-        <input type="submit" value="Submit" name="submitBtn" />
-      </form>
     </div>
-    <script>
-      document.getElementById("header").innerHTML = "Hi i am from script"
 
-
-    </script>
-
-    <script src="../js/logIn.js"></script>
-  </body>
+    <script src="js/logIn.js"></script>
+</body>
 </html>
